@@ -8,7 +8,7 @@ function hasRtlContent(element) {
         let paragraphContent = paragraph.innerText.trim();
         if (paragraphContent.length) {
             if (paragraphContent.length > 100) paragraphContent = paragraphContent.substring(0, MAX_LENGTH).replace(/<[^>]*>/g, "");
-            return isRTL(content);
+            return isRTL(paragraphContent);
         }
     }
 
