@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+   
+    "name": "RTL Confluence",
+    "version": "0.1.0",
+    "description": "Make confluence pages RTL",
+   
+    "content_scripts": [{
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "matches": ["https://confluence.albb.ir/*"]
+    }]
+   
+  }
