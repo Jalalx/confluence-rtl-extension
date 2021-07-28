@@ -5,7 +5,7 @@ function hasRtlContent(element) {
     const paragraphElements = document.querySelectorAll('div#main-content p');
     for(var i = 0; i < paragraphElements.length; i++){
         const paragraph = paragraphElements[i];
-        const paragraphContent = paragraph.innerText.trim();
+        let paragraphContent = paragraph.innerText.trim();
         if (paragraphContent.length) {
             if (paragraphContent.length > 100) paragraphContent = paragraphContent.substring(0, MAX_LENGTH).replace(/<[^>]*>/g, "");
             return isRTL(content);
