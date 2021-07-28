@@ -3,7 +3,6 @@ function hasRtlContent(element) {
 
     // look for <p> tags
     const paragraphElements = document.querySelectorAll('div#main-content p');
-    debugger
     for(var i = 0; i < paragraphElements.length; i++){
         const paragraph = paragraphElements[i];
         const paragraphContent = paragraph.innerText.trim();
